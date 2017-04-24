@@ -1,5 +1,7 @@
 {
   "name": "c",
+
+  "name": "decouverte_serveur",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,6 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Nolan32/Intro_nodeJs.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
