@@ -1,6 +1,4 @@
 {
-  "name": "c",
-
   "name": "decouverte_serveur",
   "version": "1.0.0",
   "description": "",
@@ -21,6 +19,7 @@
   },
   "homepage": "https://github.com/Nolan32/Intro_nodeJs#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "nodemon": "^1.11.0"
   }
