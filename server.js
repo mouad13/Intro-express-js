@@ -1,7 +1,7 @@
-
 var express = require ('express');
 var app = express();
-var bodyParser = require('body-parser');
+var bodyParser = require('body-parser')
+
 
 	app.use(express.static('public'));
 	app.use(bodyParser.urlencoded({ extended: false }));
@@ -18,16 +18,18 @@ var bodyParser = require('body-parser');
 	});
 
 	app.post('/auth',function(req,res){
-		var user = reo.body;
-		console.log(user);
-		res.send('ok')
-		if(admin.mdp === user.mdp && adim.loginc===cuser.login){
-			res.send('Success');
+		var user = req.body;
+		console.log(user)
+		// res.send('ok')
+			if(admin.mdp === user.mdp && adim.loginc === cuser.login){
+				res.send('Success');
+				console.log('Success');
+			}
 			
-		}
-		else{
-			res.send('Bad identifier or password')
-		}
+			else{
+				res.send('Bad identifier or password')
+				console.log('Bad identifier or password')
+			}
 
 	});
 
@@ -35,4 +37,3 @@ var bodyParser = require('body-parser');
 	app.listen(3300,function(){
 		console.log('Run on port 3300')
 	});
-

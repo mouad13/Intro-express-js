@@ -13,8 +13,9 @@ $(document).ready(function(){
 			data: user,
 			
 
-			success : function(data){
+			success : function(res){
 			alert ('Vos identifiants ont bien été envoyé');
+			$("#response").append(res);
 			}
 		})
 	});
