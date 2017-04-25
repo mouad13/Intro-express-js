@@ -1,7 +1,7 @@
 
 var express = require ('express');
 var app = express();
-var bodyParser = require('bodyParser');
+var bodyParser = require('body-parser');
 
 	app.use(express.static('public'));
 	app.use(bodyParser.urlencoded({ extended: false }));
@@ -18,14 +18,16 @@ var bodyParser = require('bodyParser');
 	});
 
 	app.post('/auth',function(req,res){
-		console.log(req);
+		var user = reo.body;
+		console.log(user);
 		res.send('ok')
 		if(admin.mdp === user.mdp && adim.loginc===cuser.login){
 			res.send('Success');
 			
 		}
-
+		else{
 			res.send('Bad identifier or password')
+		}
 
 	});
 
